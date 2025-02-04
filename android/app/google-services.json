@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "265867202268",
+    "project_id": "foss-hack-connect",
+    "storage_bucket": "foss-hack-connect.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265867202268:android:27fe0ef365ad91773cee19",
+        "android_client_info": {
+          "package_name": "com.example.students_connect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBypP0xk8_wbvT_18zghBqMVICbz8BuL8Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
