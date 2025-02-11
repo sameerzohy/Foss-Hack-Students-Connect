@@ -1,1 +1,46 @@
-{"flutter":{"platforms":{"android":{"default":{"projectId":"foss-hack-connect","appId":"1:265867202268:android:27fe0ef365ad91773cee19","fileOutput":"android/app/google-services.json"}},"ios":{"default":{"projectId":"foss-hack-connect","appId":"1:265867202268:ios:a774a81a578a20a63cee19","uploadDebugSymbols":false,"fileOutput":"ios/Runner/GoogleService-Info.plist"}},"dart":{"lib/firebase_options.dart":{"projectId":"foss-hack-connect","configurations":{"android":"1:265867202268:android:27fe0ef365ad91773cee19","ios":"1:265867202268:ios:a774a81a578a20a63cee19"}}}}}}
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "foss-hack-connect",
+          "appId": "1:265867202268:android:27fe0ef365ad91773cee19",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "foss-hack-connect",
+          "appId": "1:265867202268:ios:a774a81a578a20a63cee19",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "foss-hack-connect",
+          "configurations": {
+            "android": "1:265867202268:android:27fe0ef365ad91773cee19",
+            "ios": "1:265867202268:ios:a774a81a578a20a63cee19"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint"
+      ]
+    }
+  ]
+}
