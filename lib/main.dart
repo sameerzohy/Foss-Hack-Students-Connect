@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:students_connect/screens/get_inputs.dart';
+import 'package:students_connect/teachers/home_screen.dart';
 import 'firebase_options.dart';
 import 'package:students_connect/screens/auth_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -43,6 +44,14 @@ class MyApp extends StatelessWidget {
                       );
                     }
                     if (userSnapshot.hasData && userSnapshot.data!.exists) {
+                      var userData =
+                          userSnapshot.data!.data() as Map<String, dynamic>;
+                      print(userData);
+
+                      if (userData.containsKey('role') &&
+                          userData['role'] == 'teacher') {
+                        return TeacherHomeScreen();
+                      }
                       return HomeScreen();
                     } else {
                       return GetInputs();
